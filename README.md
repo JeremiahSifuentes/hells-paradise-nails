@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### TO DO NEXT
+
+## Landing Page 
+
+Try to make vines their own image and use flexbox to have them hanging down the side. 
+
+Create Title Component
+-Done
+
+Leave Logo and Design In background
+
+Create Navbar
+-   
+
+

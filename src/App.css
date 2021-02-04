@@ -2,37 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backgroundImage {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../src/iPhone\ 11\ Pro\ Max\ -\ 1\ \(2\).jpg);
+  background-repeat: no-repeat;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-text {
   display: flex;
   flex-direction: column;
+  float: right;
+  line-height: 1;
+  width: 50%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top {
+  align-self: flex-start;
+  padding-left: 15%
 }
+
+.bottom {
+  align-self: flex-end;
+  padding-right: 17%;
+}
+
+
