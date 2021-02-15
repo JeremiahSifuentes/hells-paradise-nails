@@ -2,15 +2,11 @@
   text-align: center;
 }
 
-.backgroundImage {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../src/iPhone\ 11\ Pro\ Max\ -\ 1\ \(2\).jpg);
+.landing-wrapper {
+  background-size: auto;
   background-repeat: no-repeat;
-  
+  background-position: top left;
+  height: 100vh;
 }
 
 .title-text {
