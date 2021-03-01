@@ -1,7 +1,9 @@
 import './App.css';
 import background from '../src/images/BackgroundImage.jpg';
 import backgroundTablet from '../src/images/Tablets.jpg';
-import ServiceCard from './components/ServicesContainer' 
+import ServicesContainer from './components/ServicesContainer';
+
+
 
 
 function App() {
@@ -17,9 +19,8 @@ function App() {
         backgroundRepeat: 'no-repeat',
         }}>
           <div className='main-content'>
-          <ServiceCard/>
-          <ServiceCard/>
-          <ServiceCard/>
+            <ServicesContainer />
+            <ServicesContainer />
           </div>
       </div>
         
