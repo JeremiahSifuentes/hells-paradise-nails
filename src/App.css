@@ -28,8 +28,8 @@
   flex-direction: column;
   background-color: #D1DFD8;
   height: 10vh;
-  transition: ease-in .6s;
-  overflow: auto;
+  transition:0.5s cubic-bezier(0.36, 0, 0.66, -0.56);
+  overflow: hidden;
   position: relative;
   font-family: Oswald;
   margin-bottom: 10%;
@@ -59,6 +59,17 @@
 .service-container-btn {
   background: 0%;
   border-color: transparent;
+  transition: 0.5s cubic-bezier(0.36, 0, 0.66, -0.56);
+  display: inline-block;     
+  position: relative;    
+  
+}
+
+.service-container-btn-expanded {
+  background: 0%;
+  border-color: transparent;
+  transform: rotate(90deg);
+  transition: 0.4s ease-in;
 }
 
 .service-container-content {
