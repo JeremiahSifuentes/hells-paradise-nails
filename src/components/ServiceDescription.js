@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const ServiceDescription = ({serviceDescription}) => {
     return (
         <div>
-            <p>{serviceDescription}</p>
+            <p className="card-description">{serviceDescription}</p>
         </div>
     )
 }
@@ -13,7 +13,7 @@ ServiceDescription.protoTypes = {
 }
 
 ServiceDescription.defaultProps = {
-    serviceDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id vitae quam porro deleniti tenetur cumque fuga corporis sit ad libero eos saepe repudiandae voluptatum facere ab maiores molestias accusantium doloribus nihil nostrum reprehenderit, molestiae harum. Corrupti ab quod impedit, odit esse minus consectetur ut, fuga, tenetur eveniet exercitationem. Nam vero iste corrupti beatae natus."
+    serviceDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit id vitae quam porro deleniti tenetur cumque fuga corporis sit ad libero eos saepe repudiandae voluptatum facere ab maiores molestias accusantium doloribus nihil nostrum reprehenderit odit esse minus"
 }
 
 export default ServiceDescription

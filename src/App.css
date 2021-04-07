@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 .App {
   text-align: center;
+  font-family: 'Oswald';
 }
 
 .landing-wrapper {
@@ -31,7 +34,7 @@
   transition:0.5s cubic-bezier(0.36, 0, 0.66, -0.56);
   overflow: hidden;
   position: relative;
-  font-family: Oswald;
+  
   margin-bottom: 10%;
 }
 
@@ -47,7 +50,6 @@
   transition: ease-in .6s;
   overflow: auto;
   position: relative;
-  font-family: Oswald;
   margin-bottom: 10%;
 }
 
@@ -73,8 +75,31 @@
 }
 
 .service-container-content {
-
+  margin-left: 4%;
+  margin-right: 4%;
 }
+
+.card-title {
+  margin-bottom: 0%;
+  font-weight: 700;
+}
+
+.card-time-price {
+  margin-top: 0%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-description {
+  font-weight: 500;
+}
+
+.card-footnote-list {
+  font-weight: 500;
+}
+
+
+
 
 
 
