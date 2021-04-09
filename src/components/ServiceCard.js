@@ -17,7 +17,7 @@ const ServiceCard = () => {
             < ServiceTimenPrice />
             < ServiceDescription />
             < ServiceFootnotes />
-            {/* < ServiceCarousel /> */}
+            < ServiceCarousel />
         </div>
     )
 }

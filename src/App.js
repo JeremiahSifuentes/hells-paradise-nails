@@ -6,6 +6,7 @@ import ServicesContainer from './components/ServicesContainer';
 
 
 
+
 function App() {
   // Logic to allow for different background image sizes depending on screen size
   const imageUrl = window.innerWidth >= 650 ? backgroundTablet : background;

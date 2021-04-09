@@ -26,11 +26,10 @@ const ServicesContainer = ({title}) => {
             </div>
                 <div  className='service-container-content'>
                     <ServiceCard />
-                    <ServiceCard />
-
-                    <ServiceCard />
-
                     <hr></hr>
+                    <ServiceCard />
+                    <hr></hr>
+                    <ServiceCard />
                 </div>
             </div>
     </>
