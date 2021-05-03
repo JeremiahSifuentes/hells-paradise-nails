@@ -1,4 +1,4 @@
-import Footnote from '../components/ServiceFootnote'
+import Footnote from './ServiceFootnote'
 
 const ServiceFootnotes = () => {
     return (

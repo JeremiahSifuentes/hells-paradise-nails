@@ -1,52 +1,55 @@
-import ServiceCard from '../components/ServiceCard'
-import {useState} from 'react'
-import ButtonImg from '../images/sort-down-solid 1.png'
-import PropTypes from 'prop-types'
 
-const ServicesContainer = ({title}) => {
+import ServiceContainerContent from './ServiceContainerContent'
+import ButtonImg from "../images/sort-down-solid 1.png";
+import ServiceContainerHeader from "../components/ServiceContainerHeader";
+import { useState } from "react";
 
-    const [isActive, setActive] = useState("false");
-   
+const ServicesContainer = ({ title }) => {
+  const [showServices, setShowServices] = useState(false)
+  const [isActive, setActive] = useState(true);
 
-    
+  const animateServiceContainer = () => {
+    setActive(!isActive);
+  };
 
+  const toggleServices = () => {
+      setShowServices(!showServices);
+      animateServiceContainer();
+  }
+  // onClick={animateServiceContainer}
 
-    const onClick = () => {
-        setActive(!isActive);
-    }
-    
-    return (
-        <>
-            <div onClick={onClick} className={isActive ? "service-container" : "service-container-expanded"}>
-                <div className="service-container-header">
-                    <h2>{title}</h2>
-                    <button  className={isActive ? "service-container-btn" : "service-container-btn-expanded"} > 
-                    <img src={ButtonImg} alt='expand-services'/>
-                </button>
-            </div>
-                <div  className='service-container-content'>
-                    <ServiceCard />
-                    <hr></hr>
-                    <ServiceCard />
-                    <hr></hr>
-                    <ServiceCard />
-                </div>
-            </div>
+  return (
+    <>
+     <div onClick={() => {
+            toggleServices();
+          }} className="service-container-header">
+         < ServiceContainerHeader />
+          <button  
+          
+          className={
+            isActive
+              ? "service-container-btn"
+              : "service-container-btn-expanded"
+          }
+        >
+          <img  src={ButtonImg} alt="expand-services" />
+        </button >
+    </div>
+      <div
+       
+        className={
+          isActive ? "service-container" : "service-container-expanded"
+        }
+      >
+       
+        < ServiceContainerContent />
+        
+      </div>
     </>
-    )
-}
+  );
+};
 
-ServicesContainer.defaultProps = {
-    title: 'Service Category'
-}
-
-ServicesContainer.protoTypes = {
-    title: PropTypes.string.isRequired,
-}
-
-
-
-export default ServicesContainer
+export default ServicesContainer;
 // This is f
 //  <div className="flex-item2">
 //      <h3 className="card-title">Title of Service</h3>

@@ -1,13 +1,10 @@
-import ServiceTitle from '../components/ServiceTitle'
-import ServiceTimenPrice from '../components/ServiceTimenPrice'
-import ServiceDescription from '../components/ServiceDescription'
-import ServiceFootnotes from '../components/ServiceFootnotes'
-import ServiceCarousel from '../components/ServiceCarousel'
-import {useState} from 'react';
+import ServiceTitle from './ServiceCard/ServiceTitle'
+import ServiceTimenPrice from './ServiceCard/ServiceTimenPrice'
+import ServiceDescription from './ServiceCard/ServiceDescription'
+import ServiceFootnotes from './ServiceCard/ServiceFootnotes'
+// import ServiceCarousel from './ServiceCard/ServiceCarousel'
 
 const ServiceCard = () => {
-
-    const [showServices, setShowServices] = useState("false")
 
     
 
@@ -17,7 +14,7 @@ const ServiceCard = () => {
             < ServiceTimenPrice />
             < ServiceDescription />
             < ServiceFootnotes />
-            < ServiceCarousel />
+            {/* < ServiceCarousel /> */}
         </div>
     )
 }
