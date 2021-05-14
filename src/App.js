@@ -1,7 +1,7 @@
 import './App.css';
 import background from '../src/images/BackgroundImage.jpg';
-import backgroundTablet from '../src/images/Tablets.jpg';
-import ServicesContainer from './components/ServicesContainer';
+import backgroundTablet from '../src/images/backgroundTablet.jpg';
+import ServicesContainer from '../src/components/ServiceContainer/ServicesContainer';
 
 
 

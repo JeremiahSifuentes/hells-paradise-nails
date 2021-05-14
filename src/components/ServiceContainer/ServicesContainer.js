@@ -1,7 +1,7 @@
 
-import ServiceContainerContent from './ServiceContainerContent'
-import ButtonImg from "../images/sort-down-solid 1.png";
-import ServiceContainerHeader from "../components/ServiceContainerHeader";
+import ServiceContainerContent from '../ServiceContainer/ServiceContainerContent'
+import ButtonImg from "../../images/sort-down-solid 1.png";
+import ServiceContainerHeader from "../ServiceContainer/ServiceContainerHeader";
 import { useState } from "react";
 
 const ServicesContainer = ({ title }) => {
@@ -16,7 +16,7 @@ const ServicesContainer = ({ title }) => {
       setShowServices(!showServices);
       animateServiceContainer();
   }
-  // onClick={animateServiceContainer}
+  
 
   return (
     <>
