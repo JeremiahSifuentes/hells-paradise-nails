@@ -6,6 +6,8 @@ const ServiceContainerContent = () => {
           <ServiceCard />
           <hr></hr>
           <ServiceCard />
+          <hr></hr>
+          <ServiceCard />
         </div>
     )
 }

@@ -3,6 +3,7 @@ import ServiceTimenPrice from '../ServiceCard/ServiceTimenPrice'
 import ServiceDescription from '../ServiceCard/ServiceDescription'
 import ServiceFootnotes from '../ServiceCard/ServiceFootnotes'
 import ServiceCarousel from '../ServiceCard/ServiceCarousel/Slider'
+import BookBtn from '../ServiceCard/BookBtn'
 
 const ServiceCard = () => {
 
@@ -15,6 +16,7 @@ const ServiceCard = () => {
             < ServiceDescription />
             < ServiceCarousel />
             < ServiceFootnotes />
+            < BookBtn />
         </div>
     )
 }

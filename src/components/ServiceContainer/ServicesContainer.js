@@ -5,23 +5,16 @@ import ServiceContainerHeader from "../ServiceContainer/ServiceContainerHeader";
 import { useState } from "react";
 
 const ServicesContainer = ({ title }) => {
-  const [showServices, setShowServices] = useState(false)
   const [isActive, setActive] = useState(true);
 
   const animateServiceContainer = () => {
     setActive(!isActive);
   };
 
-  const toggleServices = () => {
-      setShowServices(!showServices);
-      animateServiceContainer();
-  }
-  
-
   return (
     <>
      <div onClick={() => {
-            toggleServices();
+            animateServiceContainer();
           }} className="service-container-header">
          < ServiceContainerHeader />
           <button  
@@ -50,9 +43,3 @@ const ServicesContainer = ({ title }) => {
 };
 
 export default ServicesContainer;
-// This is f
-//  <div className="flex-item2">
-//      <h3 className="card-title">Title of Service</h3>
-//      <h4 className="card-time-price">(Time and Price)</h4>
-//      <p className="card-description"></p>
-// </div>

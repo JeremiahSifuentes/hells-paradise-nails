@@ -9,6 +9,8 @@ import i5 from "../../../images/carouselImages/5.jpg"
 import {ReactComponent as LeftBtn} from '../../../images/carouselImages/startLeft.svg'
 import {ReactComponent as RightBtn} from '../../../images/carouselImages/startRight.svg'
 
+
+
 const Slider = () => {
     //Array for component to show inside slider
     let sliderArr = [<ImgComp src={i1}/>,<ImgComp src={i2}/>,<ImgComp src={i3}/>,<ImgComp src={i4}/>,<ImgComp src={i5}/>]; //numbers for testing
