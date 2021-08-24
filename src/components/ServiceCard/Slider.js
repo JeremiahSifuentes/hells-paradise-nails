@@ -1,13 +1,13 @@
 import React,  { useState } from "react"
 // import '../slider.scss'
 import ImgComp from './ImgComp'
-import i1 from "../../../images/carouselImages/1.jpg"
-import i2 from "../../../images/carouselImages/2.jpg"
-import i3 from "../../../images/carouselImages/3.jpg"
-import i4 from "../../../images/carouselImages/4.jpg"
-import i5 from "../../../images/carouselImages/5.jpg"
-import {ReactComponent as LeftBtn} from '../../../images/carouselImages/startLeft.svg'
-import {ReactComponent as RightBtn} from '../../../images/carouselImages/startRight.svg'
+import i1 from "../Images/1.jpg"
+import i2 from "../Images/2.jpg"
+import i3 from "../Images/3.jpg"
+import i4 from "../Images/4.jpg"
+import i5 from "../Images/5.jpg"
+import {ReactComponent as LeftBtn} from '../Images/startLeft.svg'
+import {ReactComponent as RightBtn} from '../Images/startRight.svg'
 
 
 

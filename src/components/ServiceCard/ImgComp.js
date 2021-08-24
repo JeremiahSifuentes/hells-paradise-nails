@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const ImgComp = ({src}) => {
     let imgStyles={

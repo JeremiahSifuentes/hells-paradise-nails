@@ -1,6 +1,6 @@
 
 import ServiceContainerContent from '../ServiceContainer/ServiceContainerContent'
-import ButtonImg from "../../images/sort-down-solid 1.png";
+import ButtonImg from "../Images/sort-down-solid 1.png";
 import ServiceContainerHeader from "../ServiceContainer/ServiceContainerHeader";
 import { useState } from "react";
 

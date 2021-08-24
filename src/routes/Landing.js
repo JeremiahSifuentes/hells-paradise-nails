@@ -1,23 +1,28 @@
-import  { Link, RouteComponentProps } from "react-router-dom";
+import  { Link} from "react-router-dom";
+import background from './images/BackgroundImage.jpg'
+import backgroundTablet from './images/backgroundTablet.jpg';
+import NavBar from '../components/NavBar/NavContainer'
+import MainBtn from '../components/MainBtn/MainBtn';
+const imageUrl = window.innerWidth >= 650 ? backgroundTablet : background;
 
-interface Props extends RouteComponentProps {}
-// We have access to history because it was passed in from ROUTE in App.js
-// location.search parses out whatever is in the link address after the /
-// Match is used for parameters in the route
-export const Home: React.FC <Props> = ({history, location, match}) => {
+export const Landing = ({history, location, match}) => {
     return (
-        <div>
-            <h1>React Router</h1>
-            <Link to="/about">
-                go to about
-            </Link>
-            <button onClick={() => {
-                // API Call
-                // change page
-                history.push('/about')
-            }}>Click me</button>
+        <div
+        className="landing-wrapper"
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+       <div className="NavBar">
+          <NavBar />
         </div>
-    )
+        <div className="main-content">
+                      <Link className="mainBtn" to='/Booking'><MainBtn  /></Link>
+        </div>
+      </div>
+        )
 }
 
 export default Landing

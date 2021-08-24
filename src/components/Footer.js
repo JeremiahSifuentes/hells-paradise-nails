@@ -1,13 +1,14 @@
-import {ReactComponent as Instagram} from '../images/instagram-square-brands.svg'
-import {ReactComponent as TikTok} from '../images/tiktok-brands.svg'
+import  { Link, RouteComponentProps } from "react-router-dom";
+import {ReactComponent as Instagram} from '../routes/images/instagram-square-brands.svg'
+import {ReactComponent as TikTok} from '../routes/images/tiktok-brands.svg'
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <div className="footer">
             <div className="left-side"> 
-                <a href="">About</a>
-                <a href="">Policies</a>
-                <a href="">Book Now</a>
+                <p>About</p>
+                <Link to='/Policy'><p>Policies</p></Link>
+                <Link to='/Booking'><p>Book Now</p></Link>
             </div>
             <div className="right-side">
                 <a href="https://www.instagram.com/nail.demon/?hl=en">< Instagram className="instagram-icon" /></a>

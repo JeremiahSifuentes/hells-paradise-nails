@@ -1,12 +1,12 @@
 import './App.css';
 import './index.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {Booking} from './routes/Booking'
 import {Landing} from './routes/Landing'
 import {Policy} from './routes/Policy'
 
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <BrowserRouter>
     <Switch>
@@ -23,27 +23,3 @@ const App: React.FC = () => {
 
 export default App;
 
-// import background from '../src/images/BackgroundImage.jpg';
-// import backgroundTablet from '../src/images/backgroundTablet.jpg';
-// import NavBar from './components/NavBar/NavContainer'
-// import MainBtn from './components/MainBtn/MainBtn';
-// const imageUrl = window.innerWidth >= 650 ? backgroundTablet : background;
-// <div className="container">
-//         {/* Background Image */}
-//         <div
-//           className="landing-wrapper"
-//           style={{
-//             backgroundImage: `url(${imageUrl})`,
-//             backgroundSize: "cover",
-//             backgroundRepeat: "no-repeat",
-//           }}
-//         >
-//           <div className="NavBar">
-//             <NavBar />
-//           </div>
-//           <div className="main-content">
-            
-//             <MainBtn to="/booking"/>
-//           </div>
-//         </div>
-//       </div>

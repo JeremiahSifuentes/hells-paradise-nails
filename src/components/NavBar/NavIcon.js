@@ -1,4 +1,4 @@
-import {ReactComponent as Hamburger} from '../../images/bars-solid.svg'
+import {ReactComponent as Hamburger} from '../Images/bars-solid.svg'
 
 const NavIcon = () => {
 
